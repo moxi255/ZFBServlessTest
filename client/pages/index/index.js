@@ -2,11 +2,18 @@ Page({
   onLoad(query) {
     // 页面加载
     console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
+    
   },
   onReady() {
     // 页面加载完成
   },
   onShow() {
+   my.serverless.db.collection('users').insertOne({
+    name: 'tom',
+    age: 1
+})
+.then(res => {})
+.catch(console.error);
     // 页面显示
   },
   onHide() {
