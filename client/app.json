@@ -1,6 +1,9 @@
 {
   "pages": [
+         "pages/ProductAdd/ProductAdd",
     "pages/index/index"
+
+   
   ],
   "window": {
     "defaultTitle": "My App"

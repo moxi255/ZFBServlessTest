@@ -4,7 +4,7 @@
   "main": "",
   "license": "MIT",
   "dependencies": {
-    "@alicloud/mpserverless-sdk": "^1.0.3"
+    "@alicloud/mpserverless-sdk": "^2.3.2"
   },
   "devDependencies": {
     "alipay-cloud-sdk": "^0.9.16"

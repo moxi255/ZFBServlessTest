@@ -8,9 +8,13 @@ Page({
     // 页面加载完成
   },
   onShow() {
-   my.serverless.db.collection('users').insertOne({
-    name: 'tom',
-    age: 1
+     console.info(`Page onLoad with query:`);
+   my.serverless.db.collection('users').updateOne({
+    name: 'tom'
+}, {
+    $set: {
+        age: 20
+    }
 })
 .then(res => {})
 .catch(console.error);
