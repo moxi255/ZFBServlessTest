@@ -8,7 +8,7 @@
       <view class="form-row">
         <view class="form-row-label">商品名</view>
         <view class="form-row-content">
-          <input name="input" class="input" value="{{name}}" placeholder="请输入商品名" />
+          <input name="name" class="input" value="{{name}}" placeholder="请输入商品名" />
         </view>
       </view>
          <image class="image"
@@ -18,13 +18,13 @@
        <view class="form-row">
         <view class="form-row-label">库存</view>
         <view class="form-row-content">
-          <input name="input" type="" class="input" value="{{store}}" placeholder="请输入库存" />
+          <input name="store" type="" class="input" value="{{store}}" placeholder="请输入库存" />
         </view>
       </view>
        <view class="form-row">
         <view class="form-row-label">产品价格</view>
         <view class="form-row-content">
-          <input name="input" class="input" value="{{price}}" placeholder="请输入产品价格" />
+          <input name="price" class="input" value="{{price}}" placeholder="请输入产品价格" />
         </view>
       </view>
 

@@ -31,11 +31,16 @@ Page({
   },
   onSubmit(e){
     var data=JSON.stringify(e.detail.value);
+    console.log(e.detail.value.name)
+    var name=e.detail.value.name;
+    
+    var store=e.detail.value.store;
+    var price=e.detail.value.price;
     my.serverless.db.collection('products').insertOne({
-       name:data.name,
-    price:data.price,
-    store:data.store,
-    imageUrl:this.data.imageUrl,
+       name:name,
+    price:price,
+    store:store,
+    imageUrl:this.data.imageUrl
 })
 .then(res => {alert("添加成功")})
 .catch(console.error);
