@@ -2,5 +2,10 @@
   "cloud": {
     "type": "miniappServerless"
   },
+  "node_modules_es6_whitelist":[
+    "mpserverless-sdk-core",
+    "alipay-serverless-sdk",
+    "@alicloud/tea-typescript"
+  ],
   "miniprogramRoot": "client"
 }

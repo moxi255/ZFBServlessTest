@@ -1,6 +1,7 @@
 
 import MPServerless from '@alicloud/mpserverless-sdk';
 import cloud from 'alipay-cloud-sdk';
+import cloudSdk from 'alipay-serverless-sdk';
 // my.serverless=my.serverless||new MpServerless({
 // uploadFile:my.uploadFile,
 // request:my.request,
@@ -25,6 +26,7 @@ my.serverless =my.serverless || new MPServerless({
   endpoint: 'https://api.bspapp.com'
 });
 cloud.init(my.serverless)
+cloudSdk.init(my.serverless)
 App({
    async onLaunch(options) {
     // 第一次打开
